@@ -1,6 +1,5 @@
 var express = require('express')
 const app = express()
-const port = 3000
 const { MongoClient } = require("mongodb");
 const uri = "mongodb://Admin:Admin@localhost:27017";
 const bodyParser = require('body-parser');
@@ -13,10 +12,6 @@ app.use(express.json());
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`)
-})
 
 router.post('/users/create', async (req, res) => {
   const user = req.body;
