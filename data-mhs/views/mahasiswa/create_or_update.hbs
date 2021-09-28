@@ -1,4 +1,4 @@
-<h3 style="color:white;">{{viewTitle}}</h3>
+<h3 style="color:white; padding-bottom: 10px">{{viewTitle}}</h3>
 <form  action="/mahasiswa" method="POST" autocomplete="off">
     <input type="hidden" name="_id" value="{{mahasiswa._id}}">
     <div class="form-group">
@@ -36,7 +36,7 @@
             {{mahasiswa.nohpError}}
         </div>
     </div>
-    <div class="form-group">
+    <div class="form-group" style="padding-top:10px">
         <button type="submit" class="btn btn-success"><i class="fa fa-paper-plane"></i> Kirim</button>
         <a class="btn btn-secondary" href="/mahasiswa/list"><i class="fa fa-eye"></i> Lihat Data</a>
     </div>

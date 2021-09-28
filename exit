@@ -1,0 +1,145 @@
+[33mcommit 7b28e35ec66dfb90cd67f7e7f9f1227310b7fc97[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Roby Attoillah <byrocuy@gmail.com>
+Date:   Tue Sep 28 23:42:32 2021 +0700
+
+    Update README.md
+
+[33mcommit d8096e1de251905227ef29b4f990545ea099f898[m
+Author: Bagas Yudhistira Fauzi <61609149+bagasyudhistira@users.noreply.github.com>
+Date:   Tue Sep 28 23:38:24 2021 +0700
+
+    Create README.md
+
+[33mcommit 09c470963cad1d907e533ae2900aab57dbf7b52a[m
+Author: Bagas Yudhistira Fauzi <61609149+bagasyudhistira@users.noreply.github.com>
+Date:   Tue Sep 28 23:37:30 2021 +0700
+
+    Update README.md
+
+[33mcommit 08d7954cfb80299a4d3530fcbfaf0a0c4ca9d1da[m
+Author: dikyayodihamzah <67596331+dikyayodihamzah@users.noreply.github.com>
+Date:   Tue Sep 28 23:34:15 2021 +0700
+
+    Update README.md
+
+[33mcommit 7cbb6cd55cdaa37c30918ace213801f0d8dd54c1[m
+Author: dikyayodihamzah <67596331+dikyayodihamzah@users.noreply.github.com>
+Date:   Tue Sep 28 23:34:01 2021 +0700
+
+    Update README.md
+
+[33mcommit fbfbe93af7e36e91da85783e157bffbd3f53e3b8[m
+Author: dikyayodihamzah <67596331+dikyayodihamzah@users.noreply.github.com>
+Date:   Tue Sep 28 23:33:19 2021 +0700
+
+    Update README.md
+
+[33mcommit 17f20908a18f7290f6d7339f2e35433825aeebb5[m
+Author: mufidussani <73144184+mufidussani@users.noreply.github.com>
+Date:   Tue Sep 28 23:33:04 2021 +0700
+
+    Update README.md
+
+[33mcommit 516d50d103f931512eba143b9036b677a6be6899[m
+Author: dikyayodihamzah <67596331+dikyayodihamzah@users.noreply.github.com>
+Date:   Tue Sep 28 23:32:39 2021 +0700
+
+    Update README.md
+
+[33mcommit a825bad52392a1f47ffe32ab724423fd3623ebcb[m
+Author: dikyayodihamzah <67596331+dikyayodihamzah@users.noreply.github.com>
+Date:   Tue Sep 28 23:32:18 2021 +0700
+
+    Update README.md
+
+[33mcommit 027eba00baa9d27c561998e616aa3d05ab1da526[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: dikyayodihamzah <67596331+dikyayodihamzah@users.noreply.github.com>
+Date:   Tue Sep 28 23:31:44 2021 +0700
+
+    Update README.md
+
+[33mcommit a6df3ea9fa00da48bfc8ad405931620aaa28381c[m
+Author: dikyayodihamzah <67596331+dikyayodihamzah@users.noreply.github.com>
+Date:   Tue Sep 28 23:31:07 2021 +0700
+
+    Update README.md
+
+[33mcommit 630f9127303454c65b7b9f730c6026a0346b9ca0[m
+Author: dikyayodihamzah <67596331+dikyayodihamzah@users.noreply.github.com>
+Date:   Tue Sep 28 23:30:37 2021 +0700
+
+    Update README.md
+
+[33mcommit dd57545fe9dd002dfdb4069a5d6af0474efb80f0[m
+Author: dikyayodihamzah <67596331+dikyayodihamzah@users.noreply.github.com>
+Date:   Tue Sep 28 23:29:50 2021 +0700
+
+    Create README.md
+    
+    menambahkan keterangan
+
+[33mcommit 5b4bd72a984327ce2e0c7480edec31a753136f35[m
+Author: mufidussani <73144184+mufidussani@users.noreply.github.com>
+Date:   Tue Sep 28 23:22:13 2021 +0700
+
+    Update README.md
+
+[33mcommit d749fc73cf119bc748bda5ddce2cf5bf1bfca859[m
+Author: mufidussani <sanimufidus@gmail.com>
+Date:   Tue Sep 28 23:15:12 2021 +0700
+
+    melakukan penambahan terhadap fungsi CRUD
+
+[33mcommit 9e9fa1766dcca91eb9ce063f8af2af7e325ae147[m
+Author: mufidussani <73144184+mufidussani@users.noreply.github.com>
+Date:   Tue Sep 28 23:02:24 2021 +0700
+
+    Create README.md
+
+[33mcommit 915d4a0b4d8c6c79f2e325867a2461deda14a8c6[m
+Author: mufidussani <sanimufidus@gmail.com>
+Date:   Tue Sep 28 23:01:33 2021 +0700
+
+    memperbaiki bug minor
+
+[33mcommit d341fb906123f4a4ad07f7cb9c5f395af262284b[m
+Author: mufidussani <sanimufidus@gmail.com>
+Date:   Tue Sep 28 19:03:58 2021 +0700
+
+    memperbaiki bug pada index.js
+
+[33mcommit 1f37eeadcfe1a4cc196f31f3692c6c9e49b7e4c9[m
+Author: mufidussani <sanimufidus@gmail.com>
+Date:   Tue Sep 28 18:23:48 2021 +0700
+
+    memperbaiki beberapa bug minor
+
+[33mcommit 9bd35d8759e2dbba23ae0d147e793df24c4c45b9[m
+Author: mufidussani <sanimufidus@gmail.com>
+Date:   Tue Sep 28 17:24:47 2021 +0700
+
+    melakukan penambahan framework express.js
+
+[33mcommit 442eb308c1578fbf9fb9a0fe0295babb17714c63[m
+Author: mufidussani <73144184+mufidussani@users.noreply.github.com>
+Date:   Tue Sep 28 13:53:36 2021 +0700
+
+    Update README.md
+
+[33mcommit aa2f5c2f6847034e2dcee43dd7f7f5e6b7cf1a49[m
+Author: mufidussani <73144184+mufidussani@users.noreply.github.com>
+Date:   Tue Sep 28 12:46:21 2021 +0700
+
+    Update README.md
+
+[33mcommit 788304f714a460de4ce292d2aec7ac2d1dccc1d1[m
+Author: mufidussani <73144184+mufidussani@users.noreply.github.com>
+Date:   Tue Sep 28 12:39:18 2021 +0700
+
+    Create README.md
+
+[33mcommit bb64e0bafc0dc64be265eeb993c5eea787bb719a[m
+Author: mufidussani <sanimufidus@gmail.com>
+Date:   Tue Sep 28 12:34:16 2021 +0700
+
+    melakukan commit pertama
