@@ -1,0 +1,28 @@
+<h3 style="color: white; text-align:center;">Daftar Mahasiswa</h3><a class="btn btn-danger" href="/mahasiswa"><i class="fa fa-plus"></i> Input Data</a> 
+<table class="table table-bordered" style="margin-top:1rem; table-layout:fixed;">
+    <thead>
+        <tr style="color: white; background-color:#E05D5D; text-align:center;">
+            <th style="width: 17rem;">Nama</th>
+            <th style="width: rem;">NIM</th>
+            <th>Jurusan</th>
+            <th>Email</th>
+            <th>Nomor HP</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr style="color: black; background-color:#FFB344; font-weight:600;">
+            <td class="col-2 text-truncate">{{this.name}}</td>
+            <td class="col-2 text-truncate">{{this.nim}}</td>
+            <td class="col-2 text-truncate">{{this.jurusan}}</td>
+            <td class="col-2 text-truncate">{{this.email}}</td>
+            <td class="col-2 text-truncate">{{this.nohp}}</td>
+            <td style="text-align:center;">
+                <a href="/mahasiswa/{{this._id}}"><i class="fa fa-pencil fa-lg " style="color:#00A19D" aria-hidden="true"></i></a>
+                <a href="/mahasiswa/delete/{{this._id}}" onclick="return confirm('Apakah Anda yakin ingin menghapus data mahasiswa ini?');"><i class="fa fa-trash fa-lg" aria-hidden="true" style="color:#00A19D"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
