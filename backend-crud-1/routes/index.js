@@ -1,7 +1,7 @@
 var express = require('express')
 const app = express()
 const { MongoClient } = require("mongodb");
-const uri = "mongodb://Admin:Admin@localhost:27017";
+const uri = "mongodb+srv://admin:admin@datamahasiswa.rhqba.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const bodyParser = require('body-parser');
 var router = express.Router();
 
@@ -17,7 +17,7 @@ router.post('/users/create', async (req, res) => {
   const user = req.body;
   const client = new MongoClient(uri);
   await client.connect();
-  await client.db('db-mhs').collection('users').insertOne({
+  await client.db('myFirstDatabase').collection('users').insertOne({
       id: parseInt(user.id),
       name: user.name,
       nim: user.nim,
@@ -36,7 +36,7 @@ router.get('/users', async (req, res) => {
   const id = parseInt(req.params.id);
   const client = new MongoClient(uri);
   await client.connect();
-  const users = await client.db('db-mhs').collection('users').find({}).toArray();
+  const users = await client.db('myFirstDatabase').collection('users').find({}).toArray();
   await client.close();
   res.status(200).send(users);
 })
@@ -45,7 +45,7 @@ router.get('/users/:id', async (req, res) => {
   const id = parseInt(req.params.id);
   const client = new MongoClient(uri);
   await client.connect();
-  const user = await client.db('db-mhs').collection('users').findOne({ "id": id });
+  const user = await client.db('myFirstDatabase').collection('users').findOne({ "id": id });
   await client.close();
   res.status(200).send({
       "status": "ok",
@@ -58,7 +58,7 @@ router.put('/users/update', async (req, res) => {
   const id = parseInt(user.id);
   const client = new MongoClient(uri);
   await client.connect();
-  await client.db('db-mhs').collection('users').updateOne({ 'id': id }, {
+  await client.db('myFirstDatabase').collection('users').updateOne({ 'id': id }, {
       "$set": {
           id: parseInt(user.id),
           name: user.name,
@@ -79,7 +79,7 @@ router.delete('/users/delete', async (req, res) => {
   const id = parseInt(req.body.id);
   const client = new MongoClient(uri);
   await client.connect();
-  await client.db('db-mhs').collection('users').deleteOne({ 'id': id });
+  await client.db('myFirstDatabase').collection('users').deleteOne({ 'id': id });
   await client.close();
   res.status(200).send({
       "status": "ok",
