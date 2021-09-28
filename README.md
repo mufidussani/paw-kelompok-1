@@ -8,17 +8,5 @@ Nama Anggota:
 
 ## Requirements  
 1. Node.js  
-2. MongoDB (local installation)  
+2. MongoDB  
 3. Postman (untuk melakukan test pada API)  
-
-## Cara Menggunakan  
-1. Melakukan Clone pada repository ini  
-2. Menjalankan MongoDB localhost dengan username dan password  
-``Admin``  
-3. Melakukan instalasi dependencies melalui terminal  
-```npm install```  
-4. Menjalankan server dengan  
-```node index.js```  
-5. Membuka URL local  
-```localhost:3000```  
-6. Melakukan testing menggunakan Postman  
