@@ -10,3 +10,6 @@ Nama Anggota:
 1. Node.js  
 2. MongoDB  
 3. Postman (untuk melakukan test pada API)  
+
+## Penjelasan Aplikasi  
+Youtube: https://youtu.be/aA5snydJCXY
