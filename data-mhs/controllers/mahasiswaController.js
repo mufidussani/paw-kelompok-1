@@ -74,6 +74,18 @@ router.get('/list', (req, res) => {
     });
 });
 
+router.get('/listjson', (req, res) => {
+    Mahasiswa.find((err, docs) => {
+        if (!err) {
+            docs= docs.map(item=> item.toObject())
+            res.send({"doc" : docs})
+        }
+        else {
+            console.log('Error dalam mendapatkan list mahasiswa :' + err);
+        }
+    });
+});
+
 router.get('/:id', (req, res) => {
     Mahasiswa.findById(req.params.id, (err, doc) => {
         if (!err) {
