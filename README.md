@@ -12,4 +12,5 @@ Nama Anggota:
 3. Postman (untuk melakukan test pada API)  
 
 ## Penjelasan Aplikasi  
-Youtube: https://youtu.be/aA5snydJCXY
+Youtube: https://youtu.be/aA5snydJCXY  
+Penjelasan aplikasi secara lengkap terdapat pada tiap README.md di folder data-mhs dan backend-crud-1
