@@ -1,5 +1,5 @@
 # Tugas Pengembangan Aplikasi Web Kelompok 11  
-Tugas ini berupa API CRUD (Create, Read, Update, Delete) dengan Express.js, Node.js, dan MongoDB yang berfungsi sebagai melakukan penyimpanan data mahasiswa.  
+Tugas ini berupa Aplikasi DatMas dengan MERN (MongoDB, Express.js, React, Node.js) yang berfungsi sebagai melakukan penyimpanan data mahasiswa.  
 Nama Anggota:  
 - Diky Afamby Yodihamzah      (19/444047/TK/49243)  
 - Roby Attoillah					    (19/444068/TK/49264)  
@@ -13,4 +13,3 @@ Nama Anggota:
 
 ## Penjelasan Aplikasi  
 Youtube: https://youtu.be/aA5snydJCXY  
-Penjelasan aplikasi secara lengkap terdapat pada tiap README.md di folder data-mhs dan backend-crud-1
