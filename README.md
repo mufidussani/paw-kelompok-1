@@ -11,5 +11,16 @@ Nama Anggota:
 2. MongoDB  
 3. Postman (untuk melakukan test pada API)  
 
+## Menjalankan Aplikasi  
+1. Masuk ke folder backend, kemudian jalankan perintah  
+```npm install```  
+selanjutnya untuk menjalankan server jalankan  
+```nodemon start```
+2. Masuk ke folder client, kemudian jalankan perintah  
+```npm install```
+selanjutnya untuk menjalankan aplikasi jalankan  
+```npm start```
+3. Buka http://localhost:3000 pada browser untuk membuka aplikasi  
+
 ## Penjelasan Aplikasi  
 Youtube: https://youtu.be/aA5snydJCXY  
