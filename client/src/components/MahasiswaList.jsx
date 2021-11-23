@@ -10,7 +10,7 @@ const Mahasiswa = props => (
         <td>{props.mahasiswa.email}</td>
         <td>{props.mahasiswa.nohp}</td>
         <td>
-            <button className="btn btn-secondary"><Link to={"/update/"+props.mahasiswa._id} style={{color:"white", textDecoration:"none"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteMahasiswa(props.mahasiswa._id) }}>Delete</button>
+            <button className="btn btn-secondary" style={{background: "#161E54"}}><Link to={"/update/" + props.mahasiswa._id} style={{color: "white", textDecoration: "none" }}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => { props.deleteMahasiswa(props.mahasiswa._id) }}>Delete</button>
         </td>
     </tr>
 )
@@ -34,10 +34,10 @@ class MahasiswaList extends Component {
     }
 
     deleteMahasiswa(id) {
-        axios.delete('http://localhost:5000/delete/' +id)
+        axios.delete('http://localhost:5000/delete/' + id)
             .then(res => console.log(res.data));
 
-        this.setState({ mahasiswa: this.state.mahasiswa.filter(el => el._id !== id)})
+        this.setState({ mahasiswa: this.state.mahasiswa.filter(el => el._id !== id) })
     }
 
     mahasiswaList() {
@@ -46,26 +46,26 @@ class MahasiswaList extends Component {
         })
     }
 
-    render() { 
-        return ( 
-            <div className="container">
-                <h3>Data Mahasiswa</h3>
-                <table className="table">
-                    <thead className="thead-light">
-                        <tr>
-                            <th>Nama</th>
-                            <th>NIM</th>
-                            <th>Program Studi</th>
-                            <th>E-mail</th>
-                            <th>Nomor Handphone</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {this.mahasiswaList()}
-                    </tbody>
-                </table>
-            </div>
+    render() {
+        return (
+                <div className="container">
+                    <h3 style={{textAlign:'center', paddingBottom:'2rem'}}>Data Mahasiswa</h3>
+                    <table className="table table-hover">
+                        <thead className="thead-dark">
+                            <tr>
+                                <th>Nama</th>
+                                <th>Nomor Induk Mahasiswa (NIM)</th>
+                                <th>Program Studi</th>
+                                <th>E-Mail</th>
+                                <th>Nomor Handphone</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.mahasiswaList()}
+                        </tbody>
+                    </table>
+                </div>
         );
     }
 }
