@@ -17,7 +17,7 @@ Nama Anggota:
 selanjutnya untuk menjalankan server jalankan  
 ```nodemon start```
 2. Masuk ke folder client, kemudian jalankan perintah  
-```npm install```
+```npm install```  
 selanjutnya untuk menjalankan aplikasi jalankan  
 ```npm start```
 3. Buka http://localhost:3000 pada browser untuk membuka aplikasi  
