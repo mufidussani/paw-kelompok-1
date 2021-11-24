@@ -4,17 +4,16 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:'#181D31'}}>
-                <div className="navbar-brand" style={{marginLeft: '2rem'}}>DatMas - Data Mahasiswa</div>
-                <div className="collapse navbar-collapse">
-                    <ul className="navbar-nav">
-                        <li className="navbar-item">
-                            <Link to="/" className="nav-link">Data Mahasiswa</Link>
-                        </li>
-                        <li className="navbar-item">
-                            <Link to="/add" className="nav-link">Tambah Mahasiswa</Link>
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:'#181D31', paddingLeft:'1rem', paddingRight:'1rem'}}>
+                <a class="navbar-brand" >DatMas - Data Mahasiswa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="/">List Mahasiswa</a>
+                        <a class="nav-item nav-link" href="/add">Tambah Mahasiswa</a>
+                    </div>
                 </div>
             </nav>
         );
