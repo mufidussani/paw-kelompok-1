@@ -1,20 +1,20 @@
 const mongoose = require('mongoose');
 let mahasiswaSchema = new mongoose.Schema({
-    name:{
-        type:String,
+    name: {
+        type: String,
         required: "This field is required."
     },
-    nim:{
-        type:String
+    nim: {
+        type: String
     },
-    jurusan:{
-        type:String
+    jurusan: {
+        type: String
     },
-    email:{
-        type:String
+    email: {
+        type: String
     },
-    nohp:{
-        type:String
+    nohp: {
+        type: String
     }
 });
 // Custom validation for email

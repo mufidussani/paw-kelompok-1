@@ -10,13 +10,13 @@ import AddMahasiswa from "./components/AddMahasiswa";
 function App() {
   return (
     <Router>
-    <Navbar />
-    <br />
-    <Routes>
-      <Route path="/" element={<MahasiswaList />} />
-      <Route path="/update/:id" element={<EditMahasiswa />} />
-      <Route path="/add" element={<AddMahasiswa />} />
-    </Routes>
+      <Navbar />
+      <br />
+      <Routes>
+        <Route path="/" element={<MahasiswaList />} />
+        <Route path="/update/:id" element={<EditMahasiswa />} />
+        <Route path="/add" element={<AddMahasiswa />} />
+      </Routes>
     </Router>
   );
 }

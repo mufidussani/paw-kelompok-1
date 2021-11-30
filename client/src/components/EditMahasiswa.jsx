@@ -91,7 +91,7 @@ class EditMahasiswa extends Component {
         return (
             <div className="animate__animated animate__slideInLeft">
                 <div className="container">
-                    <h3 style={{ textAlign: 'center', fontWeight: 'bold'}}>Perbarui Data Mahasiswa</h3>
+                    <h3 style={{ textAlign: 'center', fontWeight: 'bold' }}>Perbarui Data Mahasiswa</h3>
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <label style={{ marginTop: '1rem' }}>Nama Lengkap</label>
