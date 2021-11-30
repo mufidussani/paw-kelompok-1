@@ -18,7 +18,6 @@ function App() {
       <Route path="/add" element={<AddMahasiswa />} />
     </Routes>
     </Router>
-    //</div>
   );
 }
 
