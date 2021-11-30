@@ -60,7 +60,7 @@ class AddMahasiswa extends Component {
 
             console.log(mahasiswa);
 
-            axios.post('http://localhost:5000/add', mahasiswa)
+            axios.post('https://datmas-api-paw-kelompok-11.herokuapp.com/add', mahasiswa)
                 .then(res => console.log(res.data));
 
             window.location = "/";

@@ -23,7 +23,7 @@ class EditMahasiswa extends Component {
 
     componentDidMount() {
         const id = window.location.pathname.split("/")[2]
-        axios.get('http://localhost:5000/' + id)
+        axios.get('https://datmas-api-paw-kelompok-11.herokuapp.com/' + id)
             .then(res => {
                 this.setState({
                     name: res.data.name,
@@ -79,7 +79,7 @@ class EditMahasiswa extends Component {
 
             console.log(mahasiswa);
 
-            axios.post('http://localhost:5000/update/' + id, mahasiswa)
+            axios.post('https://datmas-api-paw-kelompok-11.herokuapp.com/update/' + id, mahasiswa)
                 .then(res => console.log(res.data))
                 .catch(err => console.log(err));
 
