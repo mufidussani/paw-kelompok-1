@@ -69,9 +69,9 @@ class AddMahasiswa extends Component {
 
     render() {
         return (
-            <div className="animate__animated animate__fadeInUp">
+            <div className="animate__animated animate__slideInUp" style={{position:'fixed', width:'100%'}}>
                 <div className="container">
-                    <h3 style={{ textAlign: 'center' }}>Tambah Data Mahasiswa</h3>
+                    <h3 style={{ textAlign: 'center', fontWeight: 'bold' }}>Tambah Data Mahasiswa</h3>
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <label style={{ marginTop: '1rem' }}>Nama Lengkap</label>

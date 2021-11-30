@@ -47,9 +47,9 @@ class MahasiswaList extends Component {
 
     render() {
         return (
-            <div className="animate__animated animate__fadeInDown">
+            <div className="animate__animated animate__fadeInDown animate__delay-1s">
                 <div className="table" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
-                    <h3 style={{ textAlign: 'center', paddingBottom: '2rem' }}>Data Mahasiswa</h3>
+                    <h3 style={{ textAlign: 'center', paddingBottom: '2rem', fontWeight: 'bold' }}>Data Mahasiswa</h3>
                     <table className="table" style={{ align: 'center' }}>
                         <thead className="thead-dark">
                             <tr>
