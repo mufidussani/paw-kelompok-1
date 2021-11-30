@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import MahasiswaList from "./components/MahasiswaList";
 import EditMahasiswa from "./components/EditMahasiswa";
 import AddMahasiswa from "./components/AddMahasiswa";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/update/:id" element={<EditMahasiswa />} />
         <Route path="/add" element={<AddMahasiswa />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
