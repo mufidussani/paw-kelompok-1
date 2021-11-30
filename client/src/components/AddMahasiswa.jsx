@@ -69,61 +69,63 @@ class AddMahasiswa extends Component {
 
     render() {
         return (
-            <div className="container">
-                <h3 style={{ textAlign: 'center' }}>Tambah Data Mahasiswa</h3>
-                <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
-                        <label style={{ marginTop: '1rem' }}>Nama Lengkap</label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.name}
-                            onChange={this.onChangeName}
-                        />
-                    </div>
-                    <div className="form-group" style={{ marginTop: '1rem' }}>
-                        <label>Nomor Induk Mahasiswa (NIM)</label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.nim}
-                            onChange={this.onChangeNim}
-                        />
-                    </div>
-                    <div className="form-group" style={{ marginTop: '1rem' }}>
-                        <label>Program Studi</label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.jurusan}
-                            onChange={this.onChangeJurusan}
-                        />
-                    </div>
-                    <div className="form-group" style={{ marginTop: '1rem' }}>
-                        <label>E-Mail</label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.email}
-                            onChange={this.onChangeEmail}
-                        />
-                        <span className="text-danger">{this.state.error}</span>
-                    </div>
-                    <div className="form-group" style={{ marginTop: '1rem' }}>
-                        <label>Nomor Handphone</label>
-                        <input
-                            type="number" required
-                            pattern="[0-9]*"
-                            inputmode="numeric"
-                            className="form-control"
-                            value={this.state.nohp}
-                            onChange={this.onChangeNohp}
-                        />
-                    </div>
-                    <div className="form-group" style={{ marginTop: '2rem' }}>
-                        <input type="submit" value="Tambah Data" className="btn btn-primary" />
-                    </div>
-                </form>
+            <div className="animate__animated animate__fadeInUp">
+                <div className="container">
+                    <h3 style={{ textAlign: 'center' }}>Tambah Data Mahasiswa</h3>
+                    <form onSubmit={this.onSubmit}>
+                        <div className="form-group">
+                            <label style={{ marginTop: '1rem' }}>Nama Lengkap</label>
+                            <input
+                                type="text" required
+                                className="form-control"
+                                value={this.state.name}
+                                onChange={this.onChangeName}
+                            />
+                        </div>
+                        <div className="form-group" style={{ marginTop: '1rem' }}>
+                            <label>Nomor Induk Mahasiswa (NIM)</label>
+                            <input
+                                type="text" required
+                                className="form-control"
+                                value={this.state.nim}
+                                onChange={this.onChangeNim}
+                            />
+                        </div>
+                        <div className="form-group" style={{ marginTop: '1rem' }}>
+                            <label>Program Studi</label>
+                            <input
+                                type="text" required
+                                className="form-control"
+                                value={this.state.jurusan}
+                                onChange={this.onChangeJurusan}
+                            />
+                        </div>
+                        <div className="form-group" style={{ marginTop: '1rem' }}>
+                            <label>E-Mail</label>
+                            <input
+                                type="text" required
+                                className="form-control"
+                                value={this.state.email}
+                                onChange={this.onChangeEmail}
+                            />
+                            <span className="text-danger">{this.state.error}</span>
+                        </div>
+                        <div className="form-group" style={{ marginTop: '1rem' }}>
+                            <label>Nomor Handphone</label>
+                            <input
+                                type="number" required
+                                pattern="[0-9]*"
+                                inputmode="numeric"
+                                className="form-control"
+                                value={this.state.nohp}
+                                onChange={this.onChangeNohp}
+                            />
+                        </div>
+                        <div className="form-group" style={{ marginTop: '2rem' }}>
+                            <input type="submit" value="Tambah Data" className="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
             </div>
         );
     }

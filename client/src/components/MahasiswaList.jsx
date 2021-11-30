@@ -10,7 +10,7 @@ const Mahasiswa = props => (
         <td>{props.mahasiswa.email}</td>
         <td>{props.mahasiswa.nohp}</td>
         <td>
-            <button className="btn btn-secondary" style={{background: "#161E54"}}><Link to={"/update/" + props.mahasiswa._id} style={{color: "white", textDecoration: "none" }}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => { props.deleteMahasiswa(props.mahasiswa._id) }}>Delete</button>
+            <button className="btn btn-secondary" style={{ background: "#161E54" }}><Link to={"/update/" + props.mahasiswa._id} style={{ color: "white", textDecoration: "none" }}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => { props.deleteMahasiswa(props.mahasiswa._id) }}>Delete</button>
         </td>
     </tr>
 )
@@ -39,7 +39,6 @@ class MahasiswaList extends Component {
 
         this.setState({ mahasiswa: this.state.mahasiswa.filter(el => el._id !== id) })
     }
-
     mahasiswaList() {
         return this.state.mahasiswa.map(currentmahasiswa => {
             return <Mahasiswa mahasiswa={currentmahasiswa} deleteMahasiswa={this.deleteMahasiswa} key={currentmahasiswa._id} />
@@ -48,9 +47,10 @@ class MahasiswaList extends Component {
 
     render() {
         return (
-                <div className="table" style={{paddingLeft:'1rem', paddingRight:'1rem'}}>
-                    <h3 style={{textAlign:'center', paddingBottom:'2rem'}}>Data Mahasiswa</h3>
-                    <table className="table" style={{align:'center'}}>
+            <div className="animate__animated animate__fadeInDown">
+                <div className="table" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
+                    <h3 style={{ textAlign: 'center', paddingBottom: '2rem' }}>Data Mahasiswa</h3>
+                    <table className="table" style={{ align: 'center' }}>
                         <thead className="thead-dark">
                             <tr>
                                 <th>Nama</th>
@@ -66,6 +66,7 @@ class MahasiswaList extends Component {
                         </tbody>
                     </table>
                 </div>
+            </div>
         );
     }
 }

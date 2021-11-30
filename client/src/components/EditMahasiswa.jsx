@@ -10,7 +10,7 @@ class EditMahasiswa extends Component {
             nim: "",
             jurusan: "",
             email: "",
-            error:"",
+            error: "",
             nohp: ""
         }
         this.onChangeName = this.onChangeName.bind(this);
@@ -89,61 +89,63 @@ class EditMahasiswa extends Component {
 
     render() {
         return (
-            <div className="container">
-                <h3 style={{ textAlign: 'center' }}>Perbarui Data Mahasiswa</h3>
-                <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
-                        <label style={{ marginTop: '1rem' }}>Nama Lengkap</label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.name}
-                            onChange={this.onChangeName}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label style={{ marginTop: '1rem' }}>Nomor Induk Mahasiswa (NIM)</label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.nim}
-                            onChange={this.onChangeNim}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label style={{ marginTop: '1rem' }}>Program Studi</label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.jurusan}
-                            onChange={this.onChangeJurusan}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label style={{ marginTop: '1rem' }}>E-Mail</label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.email}
-                            onChange={this.onChangeEmail}
-                        />
-                        <span className="text-danger">{this.state.error}</span>
-                    </div>
-                    <div className="form-group">
-                        <label style={{ marginTop: '1rem' }}>Nomor Handphone</label>
-                        <input
-                            type="number" required
-                            pattern="[0-9]*"
-                            inputmode="numeric"
-                            className="form-control"
-                            value={this.state.nohp}
-                            onChange={this.onChangeNohp}
-                        />
-                    </div>
-                    <div className="form-group" style={{ marginTop: '2rem' }}>
-                        <input type="submit" value="Perbarui Data" className="btn btn-secondary" />
-                    </div>
-                </form>
+            <div className="animate__animated animate__slideInLeft">
+                <div className="container">
+                    <h3 style={{ textAlign: 'center' }}>Perbarui Data Mahasiswa</h3>
+                    <form onSubmit={this.onSubmit}>
+                        <div className="form-group">
+                            <label style={{ marginTop: '1rem' }}>Nama Lengkap</label>
+                            <input
+                                type="text" required
+                                className="form-control"
+                                value={this.state.name}
+                                onChange={this.onChangeName}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label style={{ marginTop: '1rem' }}>Nomor Induk Mahasiswa (NIM)</label>
+                            <input
+                                type="text" required
+                                className="form-control"
+                                value={this.state.nim}
+                                onChange={this.onChangeNim}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label style={{ marginTop: '1rem' }}>Program Studi</label>
+                            <input
+                                type="text" required
+                                className="form-control"
+                                value={this.state.jurusan}
+                                onChange={this.onChangeJurusan}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label style={{ marginTop: '1rem' }}>E-Mail</label>
+                            <input
+                                type="text" required
+                                className="form-control"
+                                value={this.state.email}
+                                onChange={this.onChangeEmail}
+                            />
+                            <span className="text-danger">{this.state.error}</span>
+                        </div>
+                        <div className="form-group">
+                            <label style={{ marginTop: '1rem' }}>Nomor Handphone</label>
+                            <input
+                                type="number" required
+                                pattern="[0-9]*"
+                                inputmode="numeric"
+                                className="form-control"
+                                value={this.state.nohp}
+                                onChange={this.onChangeNohp}
+                            />
+                        </div>
+                        <div className="form-group" style={{ marginTop: '2rem' }}>
+                            <input type="submit" value="Perbarui Data" className="btn btn-secondary" />
+                        </div>
+                    </form>
+                </div>
             </div>
         );
     }
