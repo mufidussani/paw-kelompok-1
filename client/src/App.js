@@ -7,6 +7,7 @@ import MahasiswaList from "./components/MahasiswaList";
 import EditMahasiswa from "./components/EditMahasiswa";
 import AddMahasiswa from "./components/AddMahasiswa";
 import Footer from "./components/Footer";
+import NoMatchPage from "./components/NoMatchPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <br />
       <Routes>
+        <Route path="*" element={<NoMatchPage />} />
         <Route path="/" element={<MahasiswaList />} />
         <Route path="/update/:id" element={<EditMahasiswa />} />
         <Route path="/add" element={<AddMahasiswa />} />
