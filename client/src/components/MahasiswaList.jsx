@@ -19,7 +19,7 @@ class MahasiswaList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            mahasiswa: []
+            mahasiswa: [],
         }
 
         this.deleteMahasiswa = this.deleteMahasiswa.bind(this);
@@ -34,10 +34,15 @@ class MahasiswaList extends Component {
     }
 
     deleteMahasiswa(id) {
-        axios.delete('https://datmas-api-paw-kelompok-11.herokuapp.com/delete/' + id)
-            .then(res => console.log(res.data));
+        if (window.confirm('Apakah Anda yakin untuk menghapus data ini?')) {
+            axios.delete('https://datmas-api-paw-kelompok-11.herokuapp.com/delete/' + id)
+                .then(res => console.log(res.data));
 
-        this.setState({ mahasiswa: this.state.mahasiswa.filter(el => el._id !== id) })
+            this.setState({ mahasiswa: this.state.mahasiswa.filter(el => el._id !== id) })
+        }
+        else {
+            return 0;
+        }
     }
     mahasiswaList() {
         return this.state.mahasiswa.map(currentmahasiswa => {
