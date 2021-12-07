@@ -94,7 +94,7 @@ class EditMahasiswa extends Component {
                     <h3 style={{ textAlign: 'center', fontWeight: 'bold' }}>Perbarui Data Mahasiswa</h3>
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
-                            <label style={{ marginTop: '1rem' }}>Nama Lengkap</label>
+                            <label style={{ marginTop: '1rem' }}>Nama Lengkap<span style={{ color: '#FF0000' }}>*</span></label>
                             <input
                                 type="text" required
                                 className="form-control"
@@ -103,7 +103,7 @@ class EditMahasiswa extends Component {
                             />
                         </div>
                         <div className="form-group">
-                            <label style={{ marginTop: '1rem' }}>Nomor Induk Mahasiswa (NIM)</label>
+                            <label style={{ marginTop: '1rem' }}>Nomor Induk Mahasiswa (NIM)<span style={{ color: '#FF0000' }}>*</span></label>
                             <input
                                 type="text" required
                                 className="form-control"
@@ -112,7 +112,7 @@ class EditMahasiswa extends Component {
                             />
                         </div>
                         <div className="form-group">
-                            <label style={{ marginTop: '1rem' }}>Program Studi</label>
+                            <label style={{ marginTop: '1rem' }}>Program Studi<span style={{ color: '#FF0000' }}>*</span></label>
                             <input
                                 type="text" required
                                 className="form-control"
@@ -121,7 +121,7 @@ class EditMahasiswa extends Component {
                             />
                         </div>
                         <div className="form-group">
-                            <label style={{ marginTop: '1rem' }}>E-Mail</label>
+                            <label style={{ marginTop: '1rem' }}>E-Mail<span style={{ color: '#FF0000' }}>*</span></label>
                             <input
                                 type="text" required
                                 className="form-control"
@@ -131,7 +131,7 @@ class EditMahasiswa extends Component {
                             <span className="text-danger">{this.state.error}</span>
                         </div>
                         <div className="form-group">
-                            <label style={{ marginTop: '1rem' }}>Nomor Handphone</label>
+                            <label style={{ marginTop: '1rem' }}>Nomor Handphone<span style={{ color: '#FF0000' }}>*</span></label>
                             <input
                                 type="number" required
                                 pattern="[0-9]*"
@@ -140,6 +140,9 @@ class EditMahasiswa extends Component {
                                 value={this.state.nohp}
                                 onChange={this.onChangeNohp}
                             />
+                        </div>
+                        <div style={{ marginTop: '1rem' }}>
+                            <p>(<span style={{ color: '#FF0000' }}>*</span>) required</p>
                         </div>
                         <div className="form-group" style={{ marginTop: '2rem' }}>
                             <input type="submit" value="Perbarui Data" className="btn btn-secondary" />
