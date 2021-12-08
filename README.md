@@ -1,10 +1,14 @@
 # Tugas Pengembangan Aplikasi Web Kelompok 11  
 Tugas ini berupa Aplikasi DatMas dengan MERN Stack (MongoDB, Express.js, React, Node.js) yang berfungsi untuk melakukan penyimpanan data mahasiswa.  
-Nama Anggota:  
-- Diky Afamby Yodihamzah      (19/444047/TK/49243)  
-- Roby Attoillah					    (19/444068/TK/49264)  
-- Bagas Yudhistira Fauzi			(19/446770/TK/49875)  
-- Mufidus Sani 					      (20/463608/TK/51600)  
+
+
+|   Nama     |   NIM     |
+|------------|-----------|
+| Diky Afamby Yodihamzah    |   19/444047/TK/49243  |
+| Roby Attoillah            |   19/444068/TK/49264  |
+| Bagas Yudhistira Fauzi    |   19/446770/TK/49875  |
+| Mufidus Sani              |   20/463608/TK/51600  |
+
 
 ## Requirements  
 1. Node.js  
@@ -14,13 +18,11 @@ Nama Anggota:
 ## Menjalankan Aplikasi secara local  
 1. Masuk ke folder backend, kemudian jalankan perintah  
 ```npm install```  
-selanjutnya untuk menjalankan server jalankan  
-```nodemon start```
 2. Masuk ke folder client, kemudian jalankan perintah  
 ```npm install```  
-selanjutnya untuk menjalankan aplikasi jalankan  
+3. selanjutnya untuk menjalankan aplikasi, pada folder client jalankan  
 ```npm start```
-3. Buka http://localhost:3000 pada browser untuk membuka aplikasi  
+4. Buka http://localhost:3000 pada browser untuk membuka aplikasi  
 
 ## Menjalankan Aplikasi melalui Heroku  
 1. Buka deployment heroku yang terdapat pada Environtments pada github ini  
@@ -28,4 +30,4 @@ selanjutnya untuk menjalankan aplikasi jalankan
 
 
 ## Penjelasan Aplikasi  
-Youtube: https://youtu.be/aA5snydJCXY  
+Youtube: https://youtu.be/iFCFMgphk44
